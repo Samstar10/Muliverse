@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Header(){
     return (
@@ -7,8 +8,8 @@ function Header(){
             <p>Get a sneak peek of the amazing world that is my mind!</p>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/new">Add New Article</a></li>
+                    <NavLink to="/" exact>Home</NavLink>
+                    <NavLink to="/new">Add New Article</NavLink>
                 </ul>
             </nav>
         </div>
