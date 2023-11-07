@@ -3,14 +3,15 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Header';
 import ArticleList from './ArticleList';
+import NewArticleForm from './NewArticleForm';
 
 function App() {
   return (
       <div>
         <Header />
         <Routes>
-          <Route exact path="/" element={ArticleList} />
-          <Route path="/new" element={NewArticleForm} />
+          <Route exact path="/" element={<ArticleList />} />
+          <Route path="/new" element={<NewArticleForm />} />
         </Routes>
       </div>
   );
