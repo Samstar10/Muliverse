@@ -14,7 +14,7 @@ function EditArticleForm(){
             setTitle(data.title)
             setContent(data.content)
         })
-    })
+    }, [id])
 
     function handleSubmit(e){
         e.preventDefault()
@@ -30,7 +30,7 @@ function EditArticleForm(){
         .then(data => {
             console.log('Article updated:', data)
             navigate(`/article/${id}`)
-        },[id])
+        })
     }
 
     return(

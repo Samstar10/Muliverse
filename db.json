@@ -2,7 +2,7 @@
   "articles": [
     {
       "title": "First Article",
-      "content": "This is the content of the first article.",
+      "content": "This is the content of the first article. I have just edited it.",
       "id": 1
     },
     {
@@ -14,6 +14,11 @@
       "title": "A day a bug",
       "content": "This is my journey on how fixing of bugs has been hella hectic",
       "id": 3
+    },
+    {
+      "title": "Happiness ",
+      "content": "This chapter of my day, is called happiness. Nothing beats the feeling of solving a bug that has been eating you up. Oh! The adrenaline Rush!!",
+      "id": 4
     }
   ]
 }
