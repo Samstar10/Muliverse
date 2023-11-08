@@ -36,6 +36,7 @@ function ArticleList(){
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search articles..."
+                className="search-input"
             />
             <ul>
                 {articles.filter(article => article.title.toLowerCase().includes(searchQuery.toLowerCase())).map(article => (
