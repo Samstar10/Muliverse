@@ -4,16 +4,6 @@
       "title": "First Article",
       "content": "This is the content of the first article.",
       "id": 1
-    },
-    {
-      "id": 3,
-      "title": "Third Article",
-      "content": "This is the content of the third article."
-    },
-    {
-      "title": "Test article",
-      "content": "This is just sample text to test my application",
-      "id": 4
     }
   ]
 }
