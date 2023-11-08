@@ -18,7 +18,7 @@ function ArticleList(){
                 {articles.map(article => (
                     <li key={article.id}>
                         <Link to={`/article/${article.id}`}>{article.title}</Link>
-                        <button>Edit</button>
+                        <Link to={`/article/${article.id}/edit`}><button>Edit</button></Link>
                         <button>Delete</button>
                     </li>
                 ))}

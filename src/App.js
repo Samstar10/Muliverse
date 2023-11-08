@@ -5,6 +5,7 @@ import Header from './Header';
 import ArticleList from './ArticleList';
 import NewArticleForm from './NewArticleForm';
 import ArticleDetail from './ArticleDetail';
+import EditArticleForm from './EditArticleForm';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/" element={<ArticleList />} />
           <Route path="/new" element={<NewArticleForm />} />
           <Route path="/article/:id" element={<ArticleDetail />} />
+          <Route path="/article/:id/edit" element={<EditArticleForm />} />
         </Routes>
       </div>
   );

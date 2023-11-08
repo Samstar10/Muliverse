@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function ArticleDetail(){
     const { id } = useParams()
@@ -18,6 +18,7 @@ function ArticleDetail(){
 
     return(
         <div className="article-detail">
+            <Link to={`/article/${article.id}/edit`}>Edit</Link>
             <h2>{article.title}</h2>
             <p>{article.content}</p>
         </div>
