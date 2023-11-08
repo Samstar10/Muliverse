@@ -19,8 +19,6 @@ function NewArticleForm(){
         .then(res => res.json())
         .then(data => {
             console.log('New article added:', data)
-            // setTitle('')
-            // setContent('')
             navigate('/')
         })
         .catch(error => console.log(error.message))

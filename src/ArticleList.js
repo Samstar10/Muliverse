@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
 import ArticleItem from "./ArticleItem";
 import { useNavigate } from "react-router-dom";
 
@@ -39,7 +38,9 @@ function ArticleList(){
                 className="search-input"
             />
             <ul>
-                {articles.filter(article => article.title.toLowerCase().includes(searchQuery.toLowerCase())).map(article => (
+                {articles
+                .filter(article => article.title.toLowerCase().includes(searchQuery.toLowerCase()))
+                .map(article => (
                     <ArticleItem 
                         key={article.id}
                         article={article}

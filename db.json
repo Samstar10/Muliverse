@@ -1,16 +1,6 @@
 {
   "articles": [
     {
-      "title": "First Article",
-      "content": "This is the content of the first article. I have just edited it.",
-      "id": 1
-    },
-    {
-      "title": "Sign of relief",
-      "content": "Just had a very nice breakthrough after fixing a bug",
-      "id": 2
-    },
-    {
       "title": "A day a bug",
       "content": "This is my journey on how fixing of bugs has been hella hectic",
       "id": 3
@@ -19,6 +9,11 @@
       "title": "Happiness ",
       "content": "This chapter of my day, is called happiness. Nothing beats the feeling of solving a bug that has been eating you up. Oh! The adrenaline Rush!!",
       "id": 4
+    },
+    {
+      "title": "Rest time",
+      "content": "Just finished with all the basic functionalities of my web application and now I can cook and rest. A sigh of relief.",
+      "id": 5
     }
   ]
 }
