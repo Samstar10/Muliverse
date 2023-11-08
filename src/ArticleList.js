@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function ArticleList(){
-    const articles = [
-        { id: 1, title: 'First Article', content: 'This is the content of the first article.' },
-        { id: 2, title: 'Second Article', content: 'This is the content of the second article.' },
-        { id: 3, title: 'Third Article', content: 'This is the content of the third article.' }
-    ]
+    const [articles, setArticles] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:3000/articles')
+        .then(res => res.json())
+        .then(data => setArticles(data))
+        .catch(error => console.log(error.message))
+    }, [])
 
     return(
         <div className="article-list">
