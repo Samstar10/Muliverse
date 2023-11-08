@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 function EditArticleForm(){
     const { id } = useParams()
-    const history = useHistory()
+    const navigate = useNavigate()
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
 
@@ -29,8 +29,8 @@ function EditArticleForm(){
         .then(res => res.json())
         .then(data => {
             console.log('Article updated:', data)
-            history.push(`/article/${id}`)
-        })
+            navigate(`/article/${id}`)
+        },[id])
     }
 
     return(
