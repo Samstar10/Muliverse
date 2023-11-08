@@ -21,8 +21,10 @@ function ArticleList(){
         .then(res => res.json())
         .then((data) => {
             console.log(data, 'has been deleted')
+            setArticles(prevArticles => prevArticles.filter(article => article.id !== id))
             navigate('/')
         })
+        .catch(error => console.log(error.message))
     }
 
     return(

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function NewArticleForm(){
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
+    const navigate = useNavigate()
 
     function handleSubmit(e){
         e.preventDefault()
@@ -17,8 +19,9 @@ function NewArticleForm(){
         .then(res => res.json())
         .then(data => {
             console.log('New article added:', data)
-            setTitle('')
-            setContent('')
+            // setTitle('')
+            // setContent('')
+            navigate('/')
         })
         .catch(error => console.log(error.message))
     }
