@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 function ArticleList(){
     const [articles, setArticles] = useState([])
     const navigate = useNavigate()
+    const [searchQuery, setSearchQuery] = useState('')
 
     useEffect(() => {
         fetch('http://localhost:3000/articles')
@@ -30,8 +31,14 @@ function ArticleList(){
     return(
         <div className="article-list">
             <h2>My Articles</h2>
+            <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search articles..."
+            />
             <ul>
-                {articles.map(article => (
+                {articles.filter(article => article.title.toLowerCase().includes(searchQuery.toLowerCase())).map(article => (
                     <ArticleItem 
                         key={article.id}
                         article={article}
