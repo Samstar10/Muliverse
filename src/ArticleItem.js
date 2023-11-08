@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function ArticleItem({ article, onDelete }){
     return(
-        <li>
+        <li className="article-item">
             <Link to={`/article/${article.id}`}>{article.title}</Link>
             <Link to={`/article/${article.id}/edit`}><button>Edit</button></Link>
             <button onClick={onDelete}>Delete</button>
