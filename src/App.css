@@ -126,3 +126,43 @@
 .article-detail p{
   font-size: 16px;
 }
+
+.edit-article-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.edit-article-form h2{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.edit-article-form form div{
+  margin-bottom: 10px;
+}
+
+.edit-article-form form label{
+  font-weight: bold;
+  display: block;
+}
+
+.edit-article-form form input,
+.edit-article-form form textarea{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.edit-article-form form button{
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
