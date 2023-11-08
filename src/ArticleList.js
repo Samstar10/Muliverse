@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function ArticleList(){
     const [articles, setArticles] = useState([])
@@ -16,7 +17,7 @@ function ArticleList(){
             <ul>
                 {articles.map(article => (
                     <li key={article.id}>
-                        <span>{article.title}</span>
+                        <NavLink to={`/article/$article.id`}>{article.title}</NavLink>
                         <button>Edit</button>
                         <button>Delete</button>
                     </li>
