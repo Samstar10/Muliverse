@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 function ArticleDetail(){
     const { id } = useParams()
+    console.log('ID:', id)
     const [article, setArticle] = useState(null)
 
     useEffect(() => {
