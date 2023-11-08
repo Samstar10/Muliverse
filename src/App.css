@@ -108,3 +108,21 @@
   border-radius: 3px;
   cursor: pointer;
 }
+
+.article-detail{
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.article-detail h2{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.article-detail p{
+  font-size: 16px;
+}
