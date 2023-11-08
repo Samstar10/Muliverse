@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header';
 import ArticleList from './ArticleList';
 import NewArticleForm from './NewArticleForm';
+import ArticleDetail from './ArticleDetail';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<ArticleList />} />
           <Route path="/new" element={<NewArticleForm />} />
+          <Route path="/article/:id" element={<ArticleDetail />} />
         </Routes>
       </div>
   );
