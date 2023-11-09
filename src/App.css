@@ -1,10 +1,14 @@
+body{
+  background-color: #effbdb;
+}
+
 .App {
   text-align: center;
   box-sizing: border-box;
 }
 
 .header{
-  background-color: #f8f8f8;
+  background-color: #10212b;
   padding: 20px;
   text-align: center;
 }
@@ -12,11 +16,63 @@
 
 .header h1{
   margin: 0;
+  color: #effbdb;
 }
 
 .header p{
   font-size: 18px;
-  color: #555;
+  color: #effbdb;
+}
+
+.gradual-appear span{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: appear ease-out 0.5s forwards;
+  animation-delay: calc(var(--animation-order) * 0.1s);
+  display: inline-block;
+}
+
+@keyframes appear{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gradual-appear span:nth-child(1){
+  --animation-order: 1;
+}
+
+.gradual-appear span:nth-child(2){
+  --animation-order: 2;
+}
+
+.gradual-appear span:nth-child(3){
+  --animation-order: 3;
+}
+
+.gradual-appear span:nth-child(4){
+  --animation-order: 4;
+}
+
+.gradual-appear span:nth-child(5){
+  --animation-order: 5;
+}
+
+.gradual-appear span:nth-child(6){
+  --animation-order: 6;
+}
+
+.gradual-appear span:nth-child(7){
+  --animation-order: 7;
+}
+
+.gradual-appear span:nth-child(8){
+  --animation-order: 8;
+}
+
+.gradual-appear span:nth-child(9){
+  --animation-order: 9;
 }
 
 .nav{
@@ -24,14 +80,14 @@
   position: relative;
   overflow: hidden;
   max-width: 100%;
-  background-color: #fff;
+  background-color: #8fa464;
   padding: 0 20px;
   border-radius: 40px;
   box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
 }
 
 .nav-item{
-  color: #83818c;
+  color: #10212b;
   padding: 20px;
   text-decoration: none;
   transition: .3s;

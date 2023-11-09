@@ -9,7 +9,7 @@ import EditArticleForm from './EditArticleForm';
 
 function App() {
   return (
-      <div>
+      <div className="App">
         <Header />
         <Routes>
           <Route exact path="/" element={<ArticleList />} />
