@@ -15,8 +15,8 @@ function Header(){
                 <span>S</span>
                 <span>E</span>
             </h1>
-            <p>Get a sneak peek of the amazing world that is my mind!</p>
-            <nav>
+            <p className="appear-gradual">Get a sneak peek of the amazing world that is my mind!</p>
+            <nav className="nav-gradual">
                 <ul className="nav">
                     <NavLink to="/" exact className="nav-item" activeClassName="is-active">Home</NavLink>
                     <NavLink to="/new" className="nav-item" activeClassName="is-active">Add New Article</NavLink>
