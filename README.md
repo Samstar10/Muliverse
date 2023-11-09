@@ -3,8 +3,10 @@
 This is a simple blog site built with React.js. It allows users to create, edit and delete articles.
 
 ## Getting Started
-## Available Scripts
+
 Clone the repository
+
+## Available Scripts
 
 In the project directory, you can run:
 ### `npm install`
