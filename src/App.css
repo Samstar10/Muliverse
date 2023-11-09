@@ -203,17 +203,19 @@ body{
 }
 
 .new-article-form{
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
+  margin-top: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #8fa464;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #effbdb;
 }
 
 .new-article-form h2{
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #10212b;
 }
 
 .new-article-form form div{
@@ -223,22 +225,27 @@ body{
 .new-article-form form label{
   font-weight: bold;
   display: block;
+  color: #10212b;
 }
 
 .new-article-form form input,
 .new-article-form form textarea{
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: 1px solid #8fa464;
+  border-radius: 5px;
+}
+
+.new-article-form form textarea{
+  height: 300px;
 }
 
 .new-article-form form button{
-  background-color: #007bff;
-  color: #fff;
+  background-color: #8fa464;
+  color: #10212b;
   border: none;
   padding: 8px 16px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
