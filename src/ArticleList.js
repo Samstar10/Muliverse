@@ -40,12 +40,15 @@ function ArticleList(){
             <ul>
                 {articles
                 .filter(article => article.title.toLowerCase().includes(searchQuery.toLowerCase()))
-                .map(article => (
-                    <ArticleItem 
-                        key={article.id}
-                        article={article}
-                        onDelete={() => handleDelete(article.id)}
-                    />
+                .map((article, index) => (
+                    <span key={article.id}>
+                        <ArticleItem 
+                            //key={article.id}
+                            article={article}
+                            onDelete={() => handleDelete(article.id)}
+                            animationOrder={index + 1}
+                        />
+                    </span>
                 ))}
             </ul>
         </div>

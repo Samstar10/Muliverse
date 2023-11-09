@@ -159,32 +159,38 @@ body{
 }
 
 .article-list{
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
 }
 
 .article-list h2{
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #10212b;
 }
 
 .article-list ul{
-  list-style: none;
   padding: 0;
-}
-
-.article-list li{
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #f8f8f8;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .article-list li span{
   font-weight: bold;
+}
+
+.article-list span{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: appear ease-out 2s forwards;
+  animation-delay: calc(var(--animation-order) * 0.1s);
+  display: block;
+}
+
+@keyframes appear{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .article-list li button{
@@ -298,25 +304,42 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #ccc;
+  border: 1px solid #8fa464;
   padding: 10px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-.article-item button{
-  background-color: #007bff;
-  color: #fff;
+.article-item .article-link{
+  text-decoration: none;
+  font-weight: 500;
+  color: #10212b;
+}
+
+.article-item .article-link:hover{
+  color: #20536e;
+}
+
+.article-item .buttons button{
+  background-color: #8fa464;
+  color: #10212b;
   border: none;
   padding: 6px 12px;
   border-radius: 3px;
   cursor: pointer;
+  margin: 0 5px;
+}
+
+.article-item .buttons button:hover{
+  background-color: #9faf81;
 }
 
 .search-input{
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: 1px solid #8fa464;
+  border-radius: 5px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  color: white;
 }
