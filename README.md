@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Muliverse
+#### Author: Samuel Muli
+This is a simple blog site built with React.js. It allows users to create, edit and delete articles.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+## Getting Started
 ## Available Scripts
+Clone the repository
 
 In the project directory, you can run:
+### `npm install`
+Installs all dependencies.
 
 ### `npm start`
 
@@ -39,32 +43,32 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Using JSON Server to Mimic a Backend Database
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To start up JSON Server, run `json-server --watch db.json` in your terminal.
+**Note**: Running this command will instruct `json-server` to use a `db.json`
+file in your terminal's current directory, so make sure to run this command from
+the same directory as this repository.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Once the server is running, you'll see a list of available resource paths in the
+terminal.
 
-### Code Splitting
+## Features
+1. View a list of all your articles.
+2. Create a new article by clicking the "Add New Article" button.
+3. Edit or delete existing articles from the list.
+4. Click on an article to view its details.
+5. Filter articles by keywords in the search bar.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
+If you'd like to contribute to this project, follow these steps:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository
+2. Clone the repository.
+3. Create a new branch for your feature:
+    `git checkout -b feature-newfeature`
+4. Make changes and commit them:
+    `git commit -m 'Add new feature'`
+5. Push to the branch:
+    `git push origin feature-newfeature`
+6. Create a pull request
