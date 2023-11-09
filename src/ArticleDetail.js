@@ -30,8 +30,10 @@ function ArticleDetail(){
 
     return(
         <div className="article-detail">
-            <Link to={`/article/${article.id}/edit`}>Edit</Link>
-            <button onClick={handleDelete}>Delete</button>
+            <div className="detail-buttons">
+                <Link to={`/article/${article.id}/edit`}><button className="edit-button">Edit</button></Link>
+                <button onClick={handleDelete} className="delete-button">Delete</button>
+            </div>
             <h2>{article.title}</h2>
             <p>{article.content}</p>
         </div>

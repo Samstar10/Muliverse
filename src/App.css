@@ -205,7 +205,7 @@ body{
 .new-article-form{
   max-width: 900px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 20px;
   border: 1px solid #8fa464;
   border-radius: 5px;
@@ -250,21 +250,39 @@ body{
 }
 
 .article-detail{
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
+  margin-top: 10px;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #8faf64;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #effbdb;
 }
 
 .article-detail h2{
-  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .article-detail p{
-  font-size: 16px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.detail-buttons{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.edit-button, .delete-button{
+  background-color: #8fa464;
+  color: #10212b;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
 }
 
 .edit-article-form{
