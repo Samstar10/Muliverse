@@ -1,5 +1,7 @@
 # Muliverse
+
 #### Author: Samuel Muli
+
 This is a simple blog site built with React.js. It allows users to create, edit and delete articles.
 
 ## Getting Started
@@ -9,7 +11,9 @@ Clone the repository
 ## Available Scripts
 
 In the project directory, you can run:
+
 ### `npm install`
+
 Installs all dependencies.
 
 ### `npm start`
@@ -56,6 +60,7 @@ Once the server is running, you'll see a list of available resource paths in the
 terminal.
 
 ## Features
+
 1. View a list of all your articles.
 2. Create a new article by clicking the "Add New Article" button.
 3. Edit or delete existing articles from the list.
@@ -63,14 +68,15 @@ terminal.
 5. Filter articles by keywords in the search bar.
 
 ## Contributing
+
 If you'd like to contribute to this project, follow these steps:
 
-1. Fork the repository
+1. Fork the repository.
 2. Clone the repository.
 3. Create a new branch for your feature:
-    `git checkout -b feature-newfeature`
+   `git checkout -b feature-newfeature`
 4. Make changes and commit them:
-    `git commit -m 'Add new feature'`
+   `git commit -m 'Add new feature'`
 5. Push to the branch:
-    `git push origin feature-newfeature`
-6. Create a pull request
+   `git push origin feature-newfeature`
+6. Create a pull request.
